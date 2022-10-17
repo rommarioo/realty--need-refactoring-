@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+.box-1 { background-color: #FF6766; }
+
+.box-3 { background-color: #66A182; }
+
+.butn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+  border-radius: 10px;
+  
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.336);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+    border-radius: 10px;
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+     border-radius: 10px;
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+
